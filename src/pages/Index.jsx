@@ -40,13 +40,26 @@ const Index = () => {
 
         <Divider />
 
-        <VStack align="start" spacing={4}>
-          <Heading as="h2" size="lg">
-            Comic Strip
-          </Heading>
-          <Text>Immerse yourself in the world of Bumm Chum with our unique comic strip featuring Klean Krack, the hero of cleanliness. Follow Klean Krack on exciting adventures as they tackle bathroom messes and promote the benefits of eco-friendly hygiene solutions.</Text>
-          <Image src="https://images.unsplash.com/photo-1705807645378-1d3de7930d41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtYW5nYSUyMGNvbWljJTIwc3RyaXAlMjBlY298ZW58MHx8fHwxNzA4Njc1MTk5fDA&ixlib=rb-4.0.3&q=80&w=1080" borderRadius="md" />
-        </VStack>
+        <Stack direction={{ base: "column", md: "row" }} spacing={8} align="center" justify="center">
+          <Box textAlign="center" p={4} boxShadow="lg" borderRadius="md">
+            <Heading as="h3" size="md" mb={2}>
+              Product 1
+            </Heading>
+            <Image src="https://via.placeholder.com/150" borderRadius="md" alt="Product 1" />
+            <Button mt={4} leftIcon={<FaShoppingCart />} colorScheme={colorScheme} size="md">
+              Shop Now
+            </Button>
+          </Box>
+          <Box textAlign="center" p={4} boxShadow="lg" borderRadius="md">
+            <Heading as="h3" size="md" mb={2}>
+              Product 2
+            </Heading>
+            <Image src="https://via.placeholder.com/150" borderRadius="md" alt="Product 2" />
+            <Button mt={4} leftIcon={<FaShoppingCart />} colorScheme={colorScheme} size="md">
+              Shop Now
+            </Button>
+          </Box>
+        </Stack>
 
         <Divider />
 
